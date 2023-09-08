@@ -1,4 +1,6 @@
 import { Context } from "baojs";
+import { renderToHtml } from "jsxte-bun";
+
 Context.prototype.sendJsx = function (element, options) {
   options = options || {};
   options.headers = options.headers || {};
