@@ -3,6 +3,7 @@ import Bao from "baojs";
 declare module "baojs" {
   interface Context {
     sendJsx(element: JSX.Element, options?: ResponseInit): Context;
+    formData(): Promise<Record<string, string>>;
   }
 }
 

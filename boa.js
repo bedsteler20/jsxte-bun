@@ -1,5 +1,5 @@
 import { Context } from "baojs";
-import { renderToHtml } from "jsxte-bun";
+import { renderToHtml } from "jsxte";
 
 Context.prototype.sendJsx = function (element, options) {
   options = options || {};
@@ -8,3 +8,7 @@ Context.prototype.sendJsx = function (element, options) {
   return this.sendRaw(new Response(renderToHtml(element), options));
 };
 export * from "baojs";
+
+Context.prototype.formData = async function () {
+  return await this.req.formData();
+};
