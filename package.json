@@ -11,6 +11,7 @@
   "dependencies": {
     "jsxte": "^3.1.3"
   },
+  "version": "1.1.0",
   "exports": {
     ".": {
       "types": "./index.d.ts",
@@ -23,7 +24,14 @@
     "./jsx-dev-runtime": {
       "types": "./jsx-runtime.d.ts",
       "import": "./jsx-runtime.js"
+    },
+    "./boa": {
+      "types": "./boa.d.ts",
+      "import": "./boa.js"
     }
+  },
+  "optionalDependencies": {
+    "baojs": "^0.2.1"
   },
   "license": "MIT"
 }
